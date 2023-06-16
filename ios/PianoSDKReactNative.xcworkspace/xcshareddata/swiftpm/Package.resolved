@@ -1,0 +1,68 @@
+{
+  "pins" : [
+    {
+      "identity" : "appauth-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/openid/AppAuth-iOS.git",
+      "state" : {
+        "revision" : "71cde449f13d453227e687458144bde372d30fc7",
+        "version" : "1.6.2"
+      }
+    },
+    {
+      "identity" : "cxense-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cXense/cxense-spm",
+      "state" : {
+        "revision" : "3d007af623c3fa72b1ebdfae2b7b9f2ebde4ca05",
+        "version" : "1.9.11"
+      }
+    },
+    {
+      "identity" : "facebook-ios-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/facebook/facebook-ios-sdk",
+      "state" : {
+        "revision" : "7fd8a930a5b2c940a22efafe0e214ed0df671312",
+        "version" : "15.1.0"
+      }
+    },
+    {
+      "identity" : "googlesignin-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/GoogleSignIn-iOS",
+      "state" : {
+        "revision" : "9c9b36af86a4dd3da16048a36cf37351e63ccfe1",
+        "version" : "6.2.4"
+      }
+    },
+    {
+      "identity" : "gtm-session-fetcher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/gtm-session-fetcher.git",
+      "state" : {
+        "revision" : "5ccda3981422a84186387dbb763ba739178b529c",
+        "version" : "2.3.0"
+      }
+    },
+    {
+      "identity" : "gtmappauth",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/GTMAppAuth.git",
+      "state" : {
+        "revision" : "6dee0cde8a1b223737a5159e55e6b4ec16bbbdd9",
+        "version" : "1.3.1"
+      }
+    },
+    {
+      "identity" : "package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/piano-public/sdk/ios/package",
+      "state" : {
+        "revision" : "986ed1ff258a708df317e5678c8842ab6332a1d9",
+        "version" : "2.6.5"
+      }
+    }
+  ],
+  "version" : 2
+}
