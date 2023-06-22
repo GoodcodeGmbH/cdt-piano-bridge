@@ -1,11 +1,8 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-<<<<<<< HEAD
-platform :ios, min_ios_version_supported
-=======
+
 platform :ios, '12.4'#min_ios_version_supported
->>>>>>> 340422b (initial)
 prepare_react_native_project!
 
 # If you are using a `react-native-flipper` your iOS build will fail when `NO_FLIPPER=1` is set.
@@ -26,16 +23,11 @@ if linkage != nil
 end
 
 target 'PianoSDKReactNative' do
-<<<<<<< HEAD
-=======
-  
   #pod 'PianoComposer', '~> 2.6.5'
   #pod 'PianoTemplate', '~> 2.6.5'
   #pod 'PianoTemplate.ID', '~> 2.6.5'
   #pod 'PianoOAuth', '~> 2.6.5'
   #pod 'PianoC1X', '~> 2.6.5'
-  
->>>>>>> 340422b (initial)
   config = use_native_modules!
 
   # Flags change depending on the env values.
