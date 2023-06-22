@@ -12,11 +12,7 @@
   "dependencies": {
     "apisauce": "^2.1.6",
     "react": "18.2.0",
-<<<<<<< HEAD
-    "react-native": "0.71.3"
-=======
     "react-native": "0.71.6"
->>>>>>> 340422b (initial)
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
