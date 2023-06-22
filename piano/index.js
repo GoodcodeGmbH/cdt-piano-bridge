@@ -1,12 +1,8 @@
 import {NativeModules, DeviceEventEmitter} from 'react-native';
 import {createApi, get, post} from './fetch';
 
-<<<<<<< HEAD
-const {PianoSDKModule} = NativeModules;
-=======
 //const {PianoSDKModule} = NativeModules;
 const PianoSDKModule = NativeModules.PianoSdk;
->>>>>>> 340422b (initial)
 
 export const ENDPOINT = {
   SANDBOX: 'https://sandbox.tinypass.com/',
@@ -62,15 +58,12 @@ const PianoSdk = {
     console.log('facebook:', facebookAppId);
     console.log('aid:', aid);
     console.log('PianoSDKModule', PianoSDKModule);
-<<<<<<< HEAD
-    PianoSDKModule.init(aid, endpoint, facebookAppId, callback);
-=======
+
     if (callback != null) {
       PianoSDKModule.init(aid, endpoint, facebookAppId, callback);
     } else {
       PianoSDKModule.init(aid, endpoint, facebookAppId);
     }
->>>>>>> 340422b (initial)
   },
 
   /**
