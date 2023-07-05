@@ -155,13 +155,16 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
 
 
-    implementation group: 'io.piano.android', name: 'id', version: '2.0.4'
-    implementation group: 'io.piano.android', name: 'api', version: '2.1.0'
-    implementation group: 'io.piano.android', name: 'oauth', version: '1.5.0'
-    implementation group: 'io.piano.android', name: 'composer', version: '2.0.3'
-    implementation group: 'io.piano.android', name: 'composer-show-template', version: '2.0.3'
-    implementation 'io.piano.android:id-oauth-facebook:2.0.3'
-    implementation 'io.piano.android:id-oauth-google:2.0.4'
+    implementation group: 'io.piano.android', name: 'id', version: '2.7.0'
+//    implementation group: 'io.piano.android', name: 'api', version: '2.7.0'
+//    implementation group: 'io.piano.android', name: 'oauth', version: '2.7.0'
+    implementation group: 'io.piano.android', name: 'composer', version: '2.7.0'
+    implementation group: 'io.piano.android', name: 'composer-show-template', version: '2.7.0'
+    implementation group: 'io.piano.android', name: 'id-oauth-facebook', version: '2.7.0'
+    implementation group: 'io.piano.android', name: 'id-oauth-google', version: '2.7.0'
+
+//    implementation 'io.piano.android:id-oauth-facebook:2.0.7'
+//    implementation 'io.piano.android:id-oauth-google:2.0.7'
 
 
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}")
