@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.os.Build;
+import android.text.TextUtils;
 import android.webkit.CookieManager;
 import android.webkit.CookieSyncManager;
 import android.webkit.JavascriptInterface;
@@ -28,6 +29,7 @@ import com.facebook.react.bridge.ReadableType;
 import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
+import com.google.zxing.common.StringUtils;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -76,15 +78,14 @@ import io.piano.android.id.models.PianoIdToken;
 public class PianoSDKModule extends ReactContextBaseJavaModule implements ActivityEventListener {
 
     private final String PIANO_LISTENER_NAME = "PIANO_LISTENER";
-
-    private final int PIANO_ID_REQUEST_CODE = 786;
-
     private final ReactApplicationContext reactContext;
     private ShowTemplateController showTemplateController;
     private Callback mCallback;
     private WritableMap response = Arguments.createMap();
     private ComposerJs composerJs;
 
+    private static String PIANO_ID_ENDPOINT = PianoId.ENDPOINT_SANDBOX;
+    private static Composer.Endpoint COMPOSER_ENDPOINT = Composer.Endpoint.SANDBOX;
 
     PianoSDKModule(ReactApplicationContext context) {
         super(context);
@@ -97,8 +98,13 @@ public class PianoSDKModule extends ReactContextBaseJavaModule implements Activi
     }
 
     @ReactMethod
-    public void init(@NonNull String aid, @NonNull Composer.Endpoint endpoint, @Nullable String facebookAppId, @Nullable Callback callback) {
-        PianoIdClient pianoIdClient = PianoId.init(endpoint.toString(), aid)
+    public void init(@NonNull String aid, @NonNull String endpoint, @Nullable String facebookAppId, @Nullable Callback callback) {
+        if (!TextUtils.isEmpty(endpoint)) {
+            PIANO_ID_ENDPOINT = endpoint;
+            COMPOSER_ENDPOINT = new Composer.Endpoint(endpoint, endpoint);
+        }
+
+        PianoIdClient pianoIdClient = PianoId.init(PIANO_ID_ENDPOINT, aid)
                 .with(new PianoIdCallback<PianoIdAuthSuccessResult>() {
                     @Override
                     public void onSuccess(PianoIdAuthSuccessResult data) {
@@ -120,7 +126,9 @@ public class PianoSDKModule extends ReactContextBaseJavaModule implements Activi
             //FacebookSdk.sdkInitialize(reactContext);
             pianoIdClient.with(new FacebookOAuthProvider());
         }
-        Composer.init(reactContext, aid, endpoint);
+
+        Composer.init(reactContext, aid, COMPOSER_ENDPOINT);
+
         reactContext.addActivityEventListener(this);
     }
 

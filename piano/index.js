@@ -1,8 +1,8 @@
-import {NativeModules, DeviceEventEmitter} from 'react-native';
-import {createApi, get, post} from './fetch';
+import { NativeModules, DeviceEventEmitter, Platform } from 'react-native';
+import { createApi, get, post } from './fetch';
 
-//const {PianoSDKModule} = NativeModules;
-const PianoSDKModule = NativeModules.PianoSdk;
+const { PianoSDKModule } = NativeModules;
+// const PianoSDKModule = NativeModules.PianoSdk;
 
 export const ENDPOINT = {
   SANDBOX: 'https://sandbox.tinypass.com/',
@@ -57,9 +57,11 @@ const PianoSdk = {
     createApi(endpoint);
     console.log('facebook:', facebookAppId);
     console.log('aid:', aid);
-    console.log('PianoSDKModule', PianoSDKModule);
-
-    if (callback != null) {
+    console.log('endpoint', endpoint);
+    console.log('callback', callback);
+    console.log('platform', Platform.OS);
+    
+    if (Platform.OS == "android") {
       PianoSDKModule.init(aid, endpoint, facebookAppId, callback);
     } else {
       PianoSDKModule.init(aid, endpoint, facebookAppId);
@@ -157,7 +159,7 @@ const PianoSdk = {
    * @returns User
    */
   getUser(aid, uid, api_token) {
-    return get(API.PUBLISHER_USER_GET, {aid, uid, api_token});
+    return get(API.PUBLISHER_USER_GET, { aid, uid, api_token });
   },
 
   /**
@@ -173,7 +175,7 @@ const PianoSdk = {
   updateUser(aid, uid, api_token, data, customData) {
     return post(
       API.PUBLISHER_USER_UPDATE,
-      {aid, uid, api_token, ...data},
+      { aid, uid, api_token, ...data },
       customData,
     );
   },
@@ -188,7 +190,7 @@ const PianoSdk = {
    * @returns User access
    */
   checkUserAccess(aid, rid, uid, api_token) {
-    return get(API.PUBLISHER_USER_ACCESS_CHECK, {aid, rid, uid, api_token});
+    return get(API.PUBLISHER_USER_ACCESS_CHECK, { aid, rid, uid, api_token });
   },
 
   /**
@@ -200,7 +202,7 @@ const PianoSdk = {
    * @returns User access
    */
   listUserAccess(aid, uid, api_token) {
-    return get(API.PUBLISHER_USER_ACCESS_LIST, {aid, uid, api_token});
+    return get(API.PUBLISHER_USER_ACCESS_LIST, { aid, uid, api_token });
   },
 
   /**
@@ -242,8 +244,8 @@ const PianoSdk = {
    */
   getExperience(
     config,
-    showLoginCallback = () => {},
-    showTemplateCallback = () => {},
+    showLoginCallback = () => { },
+    showTemplateCallback = () => { },
   ) {
     PianoSDKModule.getExperience(
       config,
@@ -257,7 +259,7 @@ const PianoSdk = {
    *
    * @param {responseCallback} [callback] - A callback to run
    */
-  addEventListener(callback = () => {}) {
+  addEventListener(callback = () => { }) {
     const subscribe = DeviceEventEmitter.addListener(PIANO_LISTENER, callback);
     return () => {
       subscribe.remove();
