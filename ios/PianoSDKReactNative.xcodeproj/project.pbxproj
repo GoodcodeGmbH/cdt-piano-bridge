@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* PianoSDKReactNativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* PianoSDKReactNativeTests.m */; };
-		0AAFF0568745EC530561D10E /* libPods-PianoSDKReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6B968EEBD441FBE501885F /* libPods-PianoSDKReactNative.a */; };
+		0A502099248DEEDC408E0C23 /* libPods-PianoSDKReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A80141A064B7BEA1194BDFF9 /* libPods-PianoSDKReactNative.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7212A8B50A1D1122092936DF /* libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B88A150E4F94CA5EAB2FD8BD /* libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a */; };
+		60E5FDC18C09F6CB7D9C2315 /* libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1DDBAF0FA5ABF3BE540267 /* libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		840CD4DC2A1CD4FA00C4100E /* PianoSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = 840CD4DB2A1CD4FA00C4100E /* PianoSdk.m */; };
 		840CD4E12A1D182300C4100E /* PianoC1X in Frameworks */ = {isa = PBXBuildFile; productRef = 840CD4E02A1D182300C4100E /* PianoC1X */; };
@@ -44,16 +44,16 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PianoSDKReactNative/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PianoSDKReactNative/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PianoSDKReactNative/main.m; sourceTree = "<group>"; };
-		1C9AA2AFCE8986076BA2FFB1 /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoSDKReactNative-PianoSDKReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1D6B968EEBD441FBE501885F /* libPods-PianoSDKReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PianoSDKReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		274AAA6EE8A1AF776A083E4F /* Pods-PianoSDKReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoSDKReactNative.release.xcconfig"; path = "Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative.release.xcconfig"; sourceTree = "<group>"; };
+		4F1DDBAF0FA5ABF3BE540267 /* libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9FCEA78840B3506EDA6484 /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoSDKReactNative-PianoSDKReactNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PianoSDKReactNative/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840CD4DB2A1CD4FA00C4100E /* PianoSdk.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PianoSdk.m; sourceTree = "<group>"; };
 		840CD4EC2A1D19EA00C4100E /* PianoSDKReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PianoSDKReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
 		840CD4EF2A1D246C00C4100E /* PianoSdkWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoSdkWrapper.swift; sourceTree = "<group>"; };
-		900875B5B7BAC86FA236F584 /* Pods-PianoSDKReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoSDKReactNative.debug.xcconfig"; path = "Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative.debug.xcconfig"; sourceTree = "<group>"; };
-		B88A150E4F94CA5EAB2FD8BD /* libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC5996D6E387BA2D4266C9C7 /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoSDKReactNative-PianoSDKReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A80141A064B7BEA1194BDFF9 /* libPods-PianoSDKReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PianoSDKReactNative.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60899D5AF639DE5028087CA /* Pods-PianoSDKReactNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoSDKReactNative.release.xcconfig"; path = "Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative.release.xcconfig"; sourceTree = "<group>"; };
+		CED0151538AE26D49B8D56F2 /* Pods-PianoSDKReactNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoSDKReactNative.debug.xcconfig"; path = "Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative.debug.xcconfig"; sourceTree = "<group>"; };
+		DDC8072C647C44BB8AC6614B /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoSDKReactNative-PianoSDKReactNativeTests.release.xcconfig"; path = "Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7212A8B50A1D1122092936DF /* libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a in Frameworks */,
+				60E5FDC18C09F6CB7D9C2315 /* libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 				840CD4E72A1D182300C4100E /* PianoOAuth in Frameworks */,
 				840CD4E32A1D182300C4100E /* PianoCommon in Frameworks */,
 				840CD4EB2A1D182300C4100E /* PianoTemplate.ID in Frameworks */,
-				0AAFF0568745EC530561D10E /* libPods-PianoSDKReactNative.a in Frameworks */,
+				0A502099248DEEDC408E0C23 /* libPods-PianoSDKReactNative.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,8 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				1D6B968EEBD441FBE501885F /* libPods-PianoSDKReactNative.a */,
-				B88A150E4F94CA5EAB2FD8BD /* libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a */,
+				A80141A064B7BEA1194BDFF9 /* libPods-PianoSDKReactNative.a */,
+				4F1DDBAF0FA5ABF3BE540267 /* libPods-PianoSDKReactNative-PianoSDKReactNativeTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,10 +160,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				900875B5B7BAC86FA236F584 /* Pods-PianoSDKReactNative.debug.xcconfig */,
-				274AAA6EE8A1AF776A083E4F /* Pods-PianoSDKReactNative.release.xcconfig */,
-				1C9AA2AFCE8986076BA2FFB1 /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.debug.xcconfig */,
-				EC5996D6E387BA2D4266C9C7 /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.release.xcconfig */,
+				CED0151538AE26D49B8D56F2 /* Pods-PianoSDKReactNative.debug.xcconfig */,
+				B60899D5AF639DE5028087CA /* Pods-PianoSDKReactNative.release.xcconfig */,
+				7B9FCEA78840B3506EDA6484 /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.debug.xcconfig */,
+				DDC8072C647C44BB8AC6614B /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -175,12 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "PianoSDKReactNativeTests" */;
 			buildPhases = (
-				B935356996801D9BFB7826B5 /* [CP] Check Pods Manifest.lock */,
+				AE7E032847F8CA4DE04CD947 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				71FC62A9477DCAE2424D470D /* [CP] Embed Pods Frameworks */,
-				6A6A30C521C9BE74A590E2D1 /* [CP] Copy Pods Resources */,
+				A12F2CC1AACD6F234E411A85 /* [CP] Embed Pods Frameworks */,
+				2186FEA6BB48244D8D0B50CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,14 +196,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PianoSDKReactNative" */;
 			buildPhases = (
-				9B2385E79C4FF11E2E7EA4FB /* [CP] Check Pods Manifest.lock */,
+				FAC848EBA71DC39096209B71 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				F6E7ECB09050D62D15BB69C5 /* [CP] Embed Pods Frameworks */,
-				B32929DF9C961F582A2B5BB8 /* [CP] Copy Pods Resources */,
+				266619B328F5D194A07EF995 /* [CP] Embed Pods Frameworks */,
+				93D1D5BA43402377861734A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,7 +297,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		6A6A30C521C9BE74A590E2D1 /* [CP] Copy Pods Resources */ = {
+		2186FEA6BB48244D8D0B50CF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -314,46 +314,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		71FC62A9477DCAE2424D470D /* [CP] Embed Pods Frameworks */ = {
+		266619B328F5D194A07EF995 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9B2385E79C4FF11E2E7EA4FB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PianoSDKReactNative-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B32929DF9C961F582A2B5BB8 /* [CP] Copy Pods Resources */ = {
+		93D1D5BA43402377861734A9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,7 +348,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B935356996801D9BFB7826B5 /* [CP] Check Pods Manifest.lock */ = {
+		A12F2CC1AACD6F234E411A85 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative-PianoSDKReactNativeTests/Pods-PianoSDKReactNative-PianoSDKReactNativeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE7E032847F8CA4DE04CD947 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -392,21 +387,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6E7ECB09050D62D15BB69C5 /* [CP] Embed Pods Frameworks */ = {
+		FAC848EBA71DC39096209B71 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PianoSDKReactNative-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PianoSDKReactNative/Pods-PianoSDKReactNative-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -463,7 +463,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C9AA2AFCE8986076BA2FFB1 /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.debug.xcconfig */;
+			baseConfigurationReference = 7B9FCEA78840B3506EDA6484 /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,7 +491,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC5996D6E387BA2D4266C9C7 /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.release.xcconfig */;
+			baseConfigurationReference = DDC8072C647C44BB8AC6614B /* Pods-PianoSDKReactNative-PianoSDKReactNativeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,7 +516,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 900875B5B7BAC86FA236F584 /* Pods-PianoSDKReactNative.debug.xcconfig */;
+			baseConfigurationReference = CED0151538AE26D49B8D56F2 /* Pods-PianoSDKReactNative.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -591,7 +591,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 274AAA6EE8A1AF776A083E4F /* Pods-PianoSDKReactNative.release.xcconfig */;
+			baseConfigurationReference = B60899D5AF639DE5028087CA /* Pods-PianoSDKReactNative.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
