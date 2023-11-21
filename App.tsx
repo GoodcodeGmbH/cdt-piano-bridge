@@ -10,20 +10,20 @@ import {
   StyleSheet,
   SafeAreaView,
   Text,
-} from "react-native";
+} from 'react-native';
 
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
 /* AID ufficiale del progetto, attualmente non funziona */
-const AID = "gQJIZmmgpe"; 
+const AID = 'gQJIZmmgpe';
 
 /* AID di prova, trovato sul web, che fa procedere */
 //const AID = "DtvhlLYXsu";
-const FACEBOOK_AID = "617883002025316";
+const FACEBOOK_AID = '617883002025316';
 
-import { Colors } from "react-native/Libraries/NewAppScreen";
+import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const styles = StyleSheet.create({
   scrollView: {
@@ -39,9 +39,9 @@ const styles = StyleSheet.create({
 });
 
 class App extends React.Component<any, any> {
-  unsubscribe:any;
+  unsubscribe: any;
 
-  constructor(props:any) {
+  constructor(props: any) {
     super(props);
     this.state = {
       data: undefined,
@@ -49,7 +49,7 @@ class App extends React.Component<any, any> {
   }
 
   componentDidMount() {
-    PianoSdk.init(AID, ENDPOINT.SANDBOX, FACEBOOK_AID);
+    PianoSdk.init(AID, ENDPOINT.PRODUCTION_EUROPE, FACEBOOK_AID);
     this.unsubscribe = PianoSdk.addEventListener(this._onListener);
   }
 
@@ -57,23 +57,23 @@ class App extends React.Component<any, any> {
     this.unsubscribe();
   }
 
-  _onListener = (response:any) => {
-    console.log("====onListener====");
+  _onListener = (response: any) => {
+    console.log('====onListener====');
     console.log(response);
   };
 
-  _onShowLoginCallback = (response:any) => {
-    console.log("====onShowLoginCallback====");
+  _onShowLoginCallback = (response: any) => {
+    console.log('====onShowLoginCallback====');
     console.log(response);
   };
 
-  _onTemplateCallback = (response:any) => {
-    console.log("====onTemplateCallback====");
+  _onTemplateCallback = (response: any) => {
+    console.log('====onTemplateCallback====');
     console.log(response);
   };
 
   _signIn = () => {
-    PianoSdk.signIn((data:any) => {
+    PianoSdk.signIn((data: any) => {
       this.setState({
         data,
       });
@@ -81,7 +81,7 @@ class App extends React.Component<any, any> {
   };
 
   _register = () => {
-    PianoSdk.register((data:any) => {
+    PianoSdk.register((data: any) => {
       this.setState({
         data,
       });
@@ -107,12 +107,12 @@ class App extends React.Component<any, any> {
     PianoSdk.getExperience(
       config,
       this._onShowLoginCallback,
-      this._onTemplateCallback
+      this._onTemplateCallback,
     );
   };
 
   _signOut = () => {
-    const accessToken = this.state.data ? this.state.data.accessToken : "";
+    const accessToken = this.state.data ? this.state.data.accessToken : '';
     PianoSdk.signOut(accessToken, () => {
       this.setState({
         data: undefined,
@@ -121,16 +121,23 @@ class App extends React.Component<any, any> {
   };
 
   render() {
-    const { data } = this.state;
+    const {data} = this.state;
     return (
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          
-          <View style={{backgroundColor:'#1e90ff'}}>
-            <Text style={{textAlign:'center', textAlignVertical:'center', padding:25, fontSize:30, color:'#fff'}}>BRIDGE Piano.io</Text>
-
+          <View style={{backgroundColor: '#1e90ff'}}>
+            <Text
+              style={{
+                textAlign: 'center',
+                textAlignVertical: 'center',
+                padding: 25,
+                fontSize: 30,
+                color: '#fff',
+              }}>
+              BRIDGE Piano.io
+            </Text>
           </View>
 
           <View style={styles.body}>

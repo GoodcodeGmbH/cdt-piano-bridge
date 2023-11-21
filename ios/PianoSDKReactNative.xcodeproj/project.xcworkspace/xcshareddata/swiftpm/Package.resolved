@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "consents",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/piano-public/sdk/ios/packages/consents",
+      "state" : {
+        "revision" : "063b37d21d0755b516e10a12760d22ec2920e671",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://gitlab.com/piano-public/sdk/ios/package",
+      "state" : {
+        "revision" : "207b0e102e1ee469bcb54c88383855ea7139751e",
+        "version" : "2.7.6"
+      }
+    }
+  ],
+  "version" : 2
+}

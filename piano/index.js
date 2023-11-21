@@ -2,7 +2,7 @@ import {NativeModules, DeviceEventEmitter, Platform} from 'react-native';
 import {createApi, get, post} from './fetch';
 
 //Change suggested by WC, but not working as intented
-// const { PianoSDKModule } = NativeModules;
+//const {PianoSDKModule} = NativeModules;
 const PianoSDKModule = NativeModules.PianoSdk;
 
 export const ENDPOINT = {
