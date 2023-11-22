@@ -3,7 +3,7 @@ import {createApi, get, post} from './fetch';
 
 //Change suggested by WC, but not working as intented
 //const {PianoSDKModule} = NativeModules;
-const PianoSDKModule = NativeModules.PianoSdk;
+//const PianoSDKModule = NativeModules.PianoSdk;
 
 export const ENDPOINT = {
   SANDBOX: 'https://sandbox.tinypass.com/',
@@ -63,9 +63,11 @@ const PianoSdk = {
     console.log('callback', callback);
     console.log('platform', Platform.OS);
 
-    if (Platform.OS == 'android') {
+    if (Platform.OS === 'android') {
+      const {PianoSDKModule} = NativeModules;
       PianoSDKModule.init(aid, endpoint, facebookAppId, callback);
     } else {
+      const PianoSDKModule = NativeModules.PianoSdk;
       PianoSDKModule.init(aid, endpoint, facebookAppId);
     }
   },
@@ -77,7 +79,13 @@ const PianoSdk = {
    */
   signIn(callback = null) {
     try {
-      PianoSDKModule.signIn(callback);
+      if (Platform.OS === 'android') {
+        const {PianoSDKModule} = NativeModules;
+        PianoSDKModule.signIn(callback);
+      } else {
+        const PianoSDKModule = NativeModules.PianoSdk;
+        PianoSDKModule.signIn(callback);
+      }
     } catch (err) {
       callback(err);
     }
@@ -90,7 +98,13 @@ const PianoSdk = {
    */
   register(callback = null) {
     try {
-      PianoSDKModule.register(callback);
+      if (Platform.OS === 'android') {
+        const {PianoSDKModule} = NativeModules;
+        PianoSDKModule.register(callback);
+      } else {
+        const PianoSDKModule = NativeModules.PianoSdk;
+        PianoSDKModule.register(callback);
+      }
     } catch (err) {
       callback(err);
     }
@@ -104,7 +118,13 @@ const PianoSdk = {
    */
   signOut(accessToken = null, callback = null) {
     try {
-      PianoSDKModule.signOut(accessToken, callback);
+      if (Platform.OS === 'android') {
+        const {PianoSDKModule} = NativeModules;
+        PianoSDKModule.signOut(accessToken, callback);
+      } else {
+        const PianoSDKModule = NativeModules.PianoSdk;
+        PianoSDKModule.signOut(accessToken, callback);
+      }
     } catch (err) {
       callback(err);
     }
@@ -117,7 +137,13 @@ const PianoSdk = {
    * @param {responseCallback} [callback=null] - A callback to run
    */
   refreshToken(accessToken, callback = null) {
-    PianoSDKModule.refreshToken(accessToken, callback);
+    if (Platform.OS === 'android') {
+      const {PianoSDKModule} = NativeModules;
+      PianoSDKModule.refreshToken(accessToken, callback);
+    } else {
+      const PianoSDKModule = NativeModules.PianoSdk;
+      PianoSDKModule.refreshToken(accessToken, callback);
+    }
   },
 
   /**
@@ -126,7 +152,13 @@ const PianoSdk = {
    * @param {string} accessToken
    */
   setUserToken(accessToken) {
-    PianoSDKModule.setUserToken(accessToken);
+    if (Platform.OS === 'android') {
+      const {PianoSDKModule} = NativeModules;
+      PianoSDKModule.setUserToken(accessToken);
+    } else {
+      const PianoSDKModule = NativeModules.PianoSdk;
+      PianoSDKModule.setUserToken(accessToken);
+    }
   },
 
   /**
@@ -135,21 +167,39 @@ const PianoSdk = {
    * @param {string} gaClientId
    */
   setGaClientId(gaClientId) {
-    PianoSDKModule.setGaClientId(gaClientId);
+    if (Platform.OS === 'android') {
+      const {PianoSDKModule} = NativeModules;
+      PianoSDKModule.setGaClientId(gaClientId);
+    } else {
+      const PianoSDKModule = NativeModules.PianoSdk;
+      PianoSDKModule.setGaClientId(gaClientId);
+    }
   },
 
   /**
    * The function clearStoredData(). Clear Composer data.
    */
   clearStoredData() {
-    PianoSDKModule.clearStoredData();
+    if (Platform.OS === 'android') {
+      const {PianoSDKModule} = NativeModules;
+      PianoSDKModule.clearStoredData();
+    } else {
+      const PianoSDKModule = NativeModules.PianoSdk;
+      PianoSDKModule.clearStoredData();
+    }
   },
 
   /**
    * The function clearStoredData(). Clear Composer data.
    */
   closeTemplateController() {
-    PianoSDKModule.closeTemplateController();
+    if (Platform.OS === 'android') {
+      const {PianoSDKModule} = NativeModules;
+      PianoSDKModule.closeTemplateController();
+    } else {
+      const PianoSDKModule = NativeModules.PianoSdk;
+      PianoSDKModule.closeTemplateController();
+    }
   },
 
   /**
@@ -249,11 +299,21 @@ const PianoSdk = {
     showLoginCallback = () => {},
     showTemplateCallback = () => {},
   ) {
-    PianoSDKModule.getExperience(
-      config,
-      showLoginCallback,
-      showTemplateCallback,
-    );
+    if (Platform.OS === 'android') {
+      const {PianoSDKModule} = NativeModules;
+      PianoSDKModule.getExperience(
+        config,
+        showLoginCallback,
+        showTemplateCallback,
+      );
+    } else {
+      const PianoSDKModule = NativeModules.PianoSdk;
+      PianoSDKModule.getExperience(
+        config,
+        showLoginCallback,
+        showTemplateCallback,
+      );
+    }
   },
 
   /**
