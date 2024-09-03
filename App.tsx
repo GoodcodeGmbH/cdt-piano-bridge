@@ -10,6 +10,7 @@ import {
   StyleSheet,
   SafeAreaView,
   Text,
+  Platform,
 } from 'react-native';
 
 type SectionProps = PropsWithChildren<{
@@ -17,10 +18,10 @@ type SectionProps = PropsWithChildren<{
 }>;
 
 /* AID ufficiale del progetto, attualmente non funziona */
-const AID = 'gQJIZmmgpe';
+// const AID = 'gQJIZmmgpe';
 
 /* AID di prova, trovato sul web, che fa procedere */
-//const AID = "DtvhlLYXsu";
+const AID = Platform.OS === 'ios' ? 'DtvhlLYXsu' : 'gQJIZmmgpe';
 const FACEBOOK_AID = '617883002025316';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
@@ -50,11 +51,11 @@ class App extends React.Component<any, any> {
 
   componentDidMount() {
     PianoSdk.init(AID, ENDPOINT.PRODUCTION_EUROPE, FACEBOOK_AID);
-    this.unsubscribe = PianoSdk.addEventListener(this._onListener);
+    // this.unsubscribe = PianoSdk.addEventListener(this._onListener);
   }
 
   componentWillUnmount() {
-    this.unsubscribe();
+    // this.unsubscribe();
   }
 
   _onListener = (response: any) => {
@@ -73,6 +74,7 @@ class App extends React.Component<any, any> {
   };
 
   _signIn = () => {
+    // PianoSdk.signInDemo();
     PianoSdk.signIn((data: any) => {
       this.setState({
         data,
